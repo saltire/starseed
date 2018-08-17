@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    {{ super() }}
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <script>
+      $(function () {
+        $('#file').change(function () {
+          $('#file-label').html(this.value.split('\\').pop());
+        });
+      });
+    </script>
+{% endblock %}
+
+{% block body %}
+      <form action='/map' method='post' enctype='multipart/form-data'>
+        <div class='input-group'>
+          <div class='custom-file'>
+            <input id='file' class='custom-file-input' type='file' name='savefile' accept='.save'>
+            <label id='file-label' for='file' class='custom-file-label'>Choose save file</label>
+          </div>
+          <div class='input-group-append'>
+            <button class='btn btn-dark' type='submit'>Generate map</button>
+          </div>
+        </div>
+      </form>
+{% endblock %}

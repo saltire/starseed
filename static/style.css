@@ -1,0 +1,20 @@
+body {
+  background: #4d5b66;
+  color: white;
+}
+
+header, footer {
+  margin: 2rem 0;
+}
+
+form {
+  max-width: 600px;
+}
+
+.custom-file-label:after {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+}
