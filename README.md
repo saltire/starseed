@@ -4,4 +4,4 @@ You can only see a small area of the world at any given time, and after a while 
 
 Also helped me cheat, of course. Spoiler alert: maybe look at the maps *after* you've played the game!
 
-Example [here](starseed-map.png).
+Web interface [here](https://starseed-pilgrim-map.herokuapp.com), example map [here](starseed-map.png?raw=true). 🌟🌱🗺
